@@ -60,6 +60,8 @@
     "confirmed_at": { "type": "string", "format": "date-time" }
   }
 }
+```
+
 ```markdown
 | Champ | Valeur |
 |------|--------|
