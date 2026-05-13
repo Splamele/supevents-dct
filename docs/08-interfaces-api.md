@@ -1,6 +1,3 @@
-## 🌐 §8 — Interfaces & contrats d’API
-
-````markdown id="qk3p9a"
 # §8 — Interfaces & contrats d’API
 
 ## Tableau des endpoints REST
@@ -33,7 +30,6 @@
 
 ### 🎫 ticket.confirmed
 
-```markdown
 | Champ         | Valeur                                |
 | ------------- | ------------------------------------- |
 | Nom           | ticket.confirmed                      |
@@ -42,12 +38,10 @@
 | Consommateurs | NotificationService, AnalyticsService |
 | Garantie      | at-least-once                         |
 | Retry         | exponentiel (5 tentatives + DLQ)      |
-```
-````
 
 ### Schéma JSON
 
-````json
+```json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "TicketConfirmedEvent",
@@ -62,17 +56,14 @@
 }
 ```
 
-```markdown
-| Champ | Valeur |
-|------|--------|
-| Nom | payment.failed |
-| Producteur | PaymentService |
-| Topic | payments.events.v1 |
+| Champ         | Valeur              |
+| ------------- | ------------------- |
+| Nom           | payment.failed      |
+| Producteur    | PaymentService      |
+| Topic         | payments.events.v1  |
 | Consommateurs | NotificationService |
-| Garantie | at-least-once |
-| Retry | exponentiel + DLQ |
-
-````
+| Garantie      | at-least-once       |
+| Retry         | exponentiel + DLQ   |
 
 ```json
 {
